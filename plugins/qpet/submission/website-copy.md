@@ -2,28 +2,32 @@
 
 ## Hero
 
-### Your idea. Your face. Three genuinely different chibi directions.
+### Your idea. Your selfie. Your 3D chibi desktop pet.
 
-Turn keywords or a selfie you deliberately select into an original 3D-rendered animated Codex pet. Compare three toy constructions, lock the one that feels like you, and validate every animation before installation.
+Describe what you want or attach a selfie. Qpet gives you three different looks, then turns your favorite into an animated desktop pet.
 
-Primary action: **Open Qpet in Codex**
+Primary action: **Try Qpet**
 
-Secondary action: **Read privacy details**
+Secondary action: **See how it works**
+
+## Why Qpet
+
+- **Easy to start.** One sentence or one photo is enough.
+- **Three real choices.** Compare different shapes and styles, not just different colors.
+- **Looks like your choice.** The face, colors, and special details stay consistent.
+- **Made to move.** Your chosen character becomes an animated desktop pet.
+- **Photo-friendly.** You choose the photo, and the original is not added to the finished pet.
 
 ## How it works
 
-1. **Describe or attach.** Enter a short creative brief, or use ChatGPT/Codex's visible camera/photo attachment to provide a selfie.
-2. **Compare three directions.** Explore collectible vinyl, tactile clay, translucent resin, plush, and other pet-safe constructions without losing the subject, color, personality, or attached accessory you requested.
-3. **Lock the identity.** Save the chosen face, silhouette, proportions, material, palette, markings, and props as a reusable specification.
-4. **Hatch and check.** Build the full animated sprite package, inspect motion and gaze directions, repair failed states, and validate before local installation.
+1. Describe your idea or attach a selfie.
+2. Choose A, B, or C.
+3. Let Qpet make and check the animations.
+4. Confirm installation and meet your new desktop pet.
 
-## Portrait privacy
+## Honest limits
 
-You choose the exact photo used. The plugin never silently activates a camera or scans a photo library. It uses only visible design cues needed for the stylized result, does not perform identity recognition or sensitive-trait inference, and never includes the source selfie in the final pet package.
-
-## Honest boundaries
-
-The output is a 3D-looking 2D animated sprite pet, not a GLB model or real-time 3D engine. It does not add native mouse events, cloud sync, permanent image hosting, or a live Usage Remaining HP overlay.
+Qpet creates a 3D-looking animated desktop pet, not a freely rotatable real-time 3D model. Live ChatGPT usage as an HP bar is not available on the current desktop pet surface.
 
 ## Footer links
 
@@ -31,5 +35,3 @@ The output is a 3D-looking 2D animated sprite pet, not a GLB model or real-time 
 - Terms of Use
 - Support
 - Release Notes
-
-Before launch, the verified publisher should host this copy and the linked policy pages on the same public HTTPS website used in the plugin submission portal.

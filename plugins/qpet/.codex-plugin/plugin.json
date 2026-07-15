@@ -1,7 +1,7 @@
 {
   "name": "qpet",
-  "version": "1.0.0",
-  "description": "Turn keywords or an authorized selfie into distinctive 3D chibi Codex pets with three art directions, identity locking, v2 animation QA, and safe packaging.",
+  "version": "1.0.1",
+  "description": "Create your own 3D chibi desktop pet from a few words or a selfie.",
   "author": {
     "name": "Petai Studio"
   },
@@ -16,17 +16,17 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Qpet",
-    "shortDescription": "Turn keywords or a selfie into a distinctive 3D chibi pet.",
-    "longDescription": "Turn a few keywords, a host-provided camera photo, or an authorized reference image into three visibly different 3D chibi art directions. Choose one, lock its silhouette, proportions, materials, palette, face, and accessories, then produce and validate a Codex-compatible animated pet package with targeted repair instead of restarting from scratch.",
+    "shortDescription": "Make a 3D chibi pet from words or a selfie.",
+    "longDescription": "Describe a pet or add a selfie. Qpet shows three different looks, remembers the one you choose, and turns it into an animated desktop pet. No design experience is needed.",
     "developerName": "Petai Studio",
     "category": "Productivity",
     "capabilities": [
-      "Three-direction 3D chibi concept design",
-      "Selfie and authorized reference transformation",
-      "Reusable character identity specifications",
-      "Animated pet packaging, validation, and repair"
+      "Create from a few words",
+      "Turn a selfie into a chibi pet",
+      "Choose from three different looks",
+      "Make an animated desktop pet"
     ],
-    "brandColor": "#7657FF",
+    "brandColor": "#E8A56A",
     "composerIcon": "./assets/composer-icon.png",
     "logo": "./assets/logo.png",
     "logoDark": "./assets/logo-dark.png",
@@ -34,9 +34,9 @@
       "./assets/screenshot-concepts.png"
     ],
     "defaultPrompt": [
-      "Turn my keywords into three distinctive Qpet concepts.",
-      "Turn my attached selfie into three 3D chibi directions.",
-      "Validate this Codex pet package and explain any failures."
+      "Make a 3D chibi pet from my idea.",
+      "Turn my attached selfie into a chibi version of me.",
+      "Show me three different Qpet styles to choose from."
     ]
   }
 }

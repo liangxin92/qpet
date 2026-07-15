@@ -1,9 +1,9 @@
 ---
 name: create-chibi-pet
-description: Turn keywords, a user-provided selfie, or authorized character references into distinctive 3D-rendered chibi Codex pets. Use for custom non-pixel desktop pets, selfie-to-chibi transformations, three art directions before generation, reusable identity specs, animated Pets v2 packages, package validation, or targeted repair that preserves an approved character.
+description: Create a personal 3D chibi desktop pet from a few words, a selfie, or an image the user has permission to use. Use when someone wants to design a Qpet, turn themselves into a chibi character, choose between three different looks, make the chosen character move, or fix an existing pet while keeping its appearance.
 ---
 
-# Create a 3D Chibi Pet
+# Qpet — Create Your 3D Chibi Pet
 
 ## Overview
 

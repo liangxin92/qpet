@@ -12,7 +12,7 @@
 
 - [x] Brand name is consistently shown as **Qpet**.
 - [x] Plugin identifier, folder name, and marketplace entry are all `qpet`.
-- [x] Logo, dark logo, composer icon, and screenshot are final.
+- [x] Logo, dark logo, composer icon, and Skill icons use the approved 奶油卷 cat avatar.
 - [x] Selfie consent and source-photo handling remain explicit.
 - [x] Qpet does not claim to open the camera silently.
 - [x] Qpet does not claim to add new native mouse interactions or a native usage HP overlay.
@@ -22,10 +22,10 @@
 ## GitHub publication
 
 - [x] Replace `OWNER` in the public installation examples with the real GitHub owner.
-- [ ] Create a public GitHub repository named `qpet`.
+- [x] Create a public GitHub repository named `qpet`.
 - [x] Review the repository license and publisher name.
-- [ ] Push the `main` branch.
-- [ ] Test installation from a clean Codex profile using the GitHub repository.
-- [ ] Create tag `v1.0.0`.
+- [x] Push the `main` branch.
+- [x] Test installation from a clean Codex profile using the GitHub repository.
+- [ ] Create tag `v1.0.1`.
 - [ ] Attach the two ZIP files and `SHA256SUMS.txt` to the GitHub Release.
 - [ ] Keep the OpenAI universal-directory submission separate from this community release.

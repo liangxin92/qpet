@@ -1,8 +1,7 @@
-# Release Notes — 1.0.0
+# Release Notes — 1.0.1
 
-- Create three distinct 3D chibi directions from keywords, a user-selected selfie, or an authorized reference.
-- Preserve approved character identity with a reusable deterministic specification.
-- Hand off to the full v2 pet animation, gaze-direction, QA, and packaging workflow.
-- Repair only failed states while retaining approved rows.
-- Validate package paths, format, dimensions, metadata, and local install conflicts.
-- Added explicit camera, portrait privacy, intellectual-property, and product-boundary safeguards.
+- Qpet now uses 奶油卷, the publisher's cream-colored curly cat pet, as its icon.
+- The GitHub page and plugin descriptions are shorter and easier to understand.
+- A new share-with-friends guide explains installation in one simple message.
+- Keyword and selfie examples are now included in the package.
+- Qpet's main benefits are clearer: three looks to choose from, a chibi-selfie option, consistent character design, and an animated desktop pet.

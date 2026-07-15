@@ -1,10 +1,21 @@
 # Qpet
 
-Qpet is the installable plugin inside the Qpet Marketplace. It bundles the `create-chibi-pet` skill, validation helpers, brand assets, and review materials.
+**用一句话或一张自拍，做出属于你的 3D Q版桌面宠物。**
 
-Use it from a new Codex task:
+Qpet 会先展示三种不同造型。你选中最喜欢的一种后，它会继续制作动画并准备安装。
 
-> Use $qpet:create-chibi-pet to show three distinct 3D chibi directions from my keywords or attached selfie, then hatch my choice as a validated Codex pet.
+## 使用方法
 
-Camera/photo selection is controlled by the host and visibly initiated by the user. Qpet does not silently access a camera, photo library, credentials, logs, or account-usage data.
+安装完成后，新建一个 Codex 对话。
 
+关键词示例：
+
+> 使用 $qpet:create-chibi-pet，把“薄荷色宇航员柴犬、好奇、软陶质感”做成三套不同的 Q版宠物。
+
+自拍示例：
+
+> 使用 $qpet:create-chibi-pet，把我附加的自拍做成三套 Q版宠物，保留我的发型、眼镜和服装配色。
+
+然后选择 A、B 或 C，并确认制作和安装即可。
+
+Qpet 只使用你主动附加的照片，不会偷偷打开相机，也不会把原始自拍放进完成的宠物文件。

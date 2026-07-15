@@ -1,4 +1,7 @@
 interface:
-  display_name: "Create Qpet"
-  short_description: "Turn keywords or a selfie into a 3D chibi pet"
-  default_prompt: "Use $create-chibi-pet to show three distinct 3D chibi directions from my keywords or attached selfie, then hatch my choice as a validated Codex pet."
+  display_name: "Qpet"
+  short_description: "Make a 3D chibi pet from words or a selfie"
+  icon_small: "./assets/icon-small.png"
+  icon_large: "./assets/icon-large.png"
+  brand_color: "#E8A56A"
+  default_prompt: "Use $create-chibi-pet to turn my words or attached selfie into three Qpet styles, then make my favorite an animated desktop pet."

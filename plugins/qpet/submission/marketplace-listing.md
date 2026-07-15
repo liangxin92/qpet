@@ -1,4 +1,4 @@
-# Marketplace Listing
+# Qpet Marketplace Listing
 
 ## Name
 
@@ -6,42 +6,35 @@ Qpet
 
 ## Tagline
 
-Turn keywords or a selfie into a distinctive, validated animated chibi pet.
+Make your own 3D chibi desktop pet from words or a selfie.
 
 ## Short description
 
-Explore three toy-style directions, lock your character's identity, and hatch a polished Codex pet.
+Describe an idea or add a selfie. Pick one of three looks and turn it into an animated desktop pet.
 
 ## Full description
 
-Qpet turns a short idea, a selfie selected through ChatGPT/Codex's visible camera or photo attachment, or another authorized reference into a 3D-rendered animated pet.
+Qpet makes personal desktop pets easy. Describe an animal, a character, an object, or attach a selfie. Qpet shows three clearly different 3D chibi looks, so you can choose before the full pet is made.
 
-Instead of sending every request through one house style, the plugin first creates three visibly different directions. Each direction varies silhouette, proportions, material, palette, face construction, and accessory logic. Once you choose, it saves a reusable character specification and keeps that identity stable across every animation state.
+After you choose, Qpet keeps the face, colors, shape, and favorite accessory consistent while it creates the animations. If one movement needs work, Qpet can fix that part without redesigning the whole character.
 
-The production workflow validates transparency and atlas geometry, reviews animation and look directions, repairs only failed states, and packages the result for safe local trial. Selfies remain user-selected inputs; the plugin never activates a camera silently and never includes the source photo in the finished pet.
+For selfies, you choose the exact photo and the visible details you want to keep. Qpet never opens the camera by itself and never puts the original selfie inside the finished pet.
 
-This creates a 3D-looking 2D sprite pet. It does not create GLB models, add new mouse events, provide cloud synchronization, host permanent download links, or draw live account-usage information on the native Pet surface.
+## Why people will love Qpet
 
-## Distinct value
-
-- three deliberately different concepts, not three recolors
-- selfie-to-chibi translation based only on selected visible cues
-- deterministic seeds and reusable `pet-spec.json`
-- identity locks for face, silhouette, material, palette, and attached props
-- targeted row repair instead of complete regeneration
-- v2 validation evidence, contact sheets, motion previews, and conflict-aware installation
+- start with one sentence or one photo
+- see three genuinely different looks before choosing
+- turn yourself into a cute chibi desktop pet
+- keep the chosen character consistent across every movement
+- fix one movement without starting over
+- use your photo only when you choose to attach it
 
 ## Starter prompts
 
-1. Turn “mint astronaut shiba, curious, tiny satchel, soft clay” into three clearly different 3D chibi pet concepts, then let me choose one.
-2. Let me take or attach a selfie, then make a Q-version of me that keeps my hair, glasses, and blue hoodie. Show three toy-material directions first.
-3. Validate this pet package and tell me exactly which dimensions, transparency, or metadata checks fail.
+1. Make three Qpet styles from “mint astronaut shiba, curious, tiny satchel, soft clay.”
+2. Turn my attached selfie into a chibi pet and keep my hair, glasses, and blue hoodie.
+3. Make this pet move while keeping the face and colors exactly the same.
 
-## Requirements and limitations
+## Current limits
 
-- New artwork requires the host's built-in image-generation capability or an authorized existing image.
-- Full animation uses the current bundled Codex pet workflow.
-- Camera/photo selection is controlled by the host and visibly initiated by the user.
-- Local custom pets are not advertised as cloud-synced.
-- A public install deep link requires a separate direct HTTPS image host; this skills-only release does not provide one.
-- The current Pet renderer has no public plugin HUD slot, so live Usage Remaining as HP is not part of this release.
+Qpet creates a 3D-looking animated desktop pet, not a freely rotatable real-time 3D model. The current desktop pet area also does not support a live ChatGPT usage HP bar.
