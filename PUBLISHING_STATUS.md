@@ -1,7 +1,7 @@
 # Publishing status
 
-Status: **v1.0.1 — VALIDATED FOR PUBLIC COMMUNITY RELEASE**
+Status: **v1.0.1 — PUBLISHED**
 
-The GitHub Marketplace structure, plain-language documentation, 奶油卷 cat branding, CI, verification, and packaging pipeline are complete. The Qpet payload passed plugin validation, skill validation, all 27 unit tests, marketplace verification, archive integrity checks, and a sensitive-content scan on 2026-07-15.
+The GitHub Marketplace structure, plain-language documentation, 奶油卷 cat branding, CI, verification, and packaging pipeline are complete. The Qpet payload passed plugin validation, skill validation, all 27 unit tests, marketplace verification, archive integrity checks, and a sensitive-content scan on 2026-07-15. Tag and release `v1.0.1` are public on GitHub.
 
 This repository is the public community distribution for Qpet. Submission to any OpenAI-operated universal directory remains a separate review process.
