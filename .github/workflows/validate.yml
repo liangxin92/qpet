@@ -1,0 +1,31 @@
+name: Validate Qpet Marketplace
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify marketplace structure
+        run: python3 scripts/verify_marketplace.py
+      - name: Run tests
+        run: python3 -W error -m unittest discover -s plugins/qpet/tests -v
+      - name: Build deterministic release archives
+        run: python3 scripts/package_release.py --output dist
+      - uses: actions/upload-artifact@v4
+        with:
+          name: qpet-release-candidate
+          path: |
+            dist/*.zip
+            dist/SHA256SUMS.txt
+

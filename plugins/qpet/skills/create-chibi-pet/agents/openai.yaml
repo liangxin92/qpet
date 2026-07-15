@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Qpet"
+  short_description: "Turn keywords or a selfie into a 3D chibi pet"
+  default_prompt: "Use $create-chibi-pet to show three distinct 3D chibi directions from my keywords or attached selfie, then hatch my choice as a validated Codex pet."

@@ -1,0 +1,42 @@
+{
+  "name": "qpet",
+  "version": "1.0.0",
+  "description": "Turn keywords or an authorized selfie into distinctive 3D chibi Codex pets with three art directions, identity locking, v2 animation QA, and safe packaging.",
+  "author": {
+    "name": "Petai Studio"
+  },
+  "license": "MIT",
+  "keywords": [
+    "pet",
+    "chibi",
+    "3d",
+    "selfie",
+    "character"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Qpet",
+    "shortDescription": "Turn keywords or a selfie into a distinctive 3D chibi pet.",
+    "longDescription": "Turn a few keywords, a host-provided camera photo, or an authorized reference image into three visibly different 3D chibi art directions. Choose one, lock its silhouette, proportions, materials, palette, face, and accessories, then produce and validate a Codex-compatible animated pet package with targeted repair instead of restarting from scratch.",
+    "developerName": "Petai Studio",
+    "category": "Productivity",
+    "capabilities": [
+      "Three-direction 3D chibi concept design",
+      "Selfie and authorized reference transformation",
+      "Reusable character identity specifications",
+      "Animated pet packaging, validation, and repair"
+    ],
+    "brandColor": "#7657FF",
+    "composerIcon": "./assets/composer-icon.png",
+    "logo": "./assets/logo.png",
+    "logoDark": "./assets/logo-dark.png",
+    "screenshots": [
+      "./assets/screenshot-concepts.png"
+    ],
+    "defaultPrompt": [
+      "Turn my keywords into three distinctive Qpet concepts.",
+      "Turn my attached selfie into three 3D chibi directions.",
+      "Validate this Codex pet package and explain any failures."
+    ]
+  }
+}
