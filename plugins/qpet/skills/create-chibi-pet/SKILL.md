@@ -23,7 +23,7 @@ The deliverable is a 3D-rendered 2D sprite pet. Never describe it as a GLB model
 
 ## 1. Check the runtime
 
-Before image work or packaging, call `load_workspace_dependencies`. Use the returned Python executable for scripts that need Pillow. From this skill directory, run:
+Before image work or packaging, call `load_workspace_dependencies` once for the task and reuse the result. Use the returned Python executable for scripts that need Pillow. From this skill directory, run:
 
 ```bash
 python3 scripts/check_runtime.py --pretty
@@ -105,7 +105,7 @@ Apply the installed `$hatch-pet` skill for all visual production, deterministic 
 - the approved concept image and every identity-defining authorized reference
 - a stable description calling for a compact whole-body 3D-rendered chibi sprite
 
-Do not recreate `$hatch-pet`'s atlas pipeline locally and do not generate a complete atlas in one image request. Require its full v2 gates: nine standard animation rows, four cardinal anchors, sixteen look directions, transparency cleanup, contact sheets, motion previews, blind direction QA, validation, and `spriteVersionNumber: 2` packaging.
+Do not recreate `$hatch-pet`'s atlas pipeline locally and do not generate a complete atlas in one image request. Require its full v2 gates: nine standard animation rows, four cardinal anchors, sixteen look directions, transparency cleanup, contact sheets, motion previews, blind direction QA, validation, and `spriteVersionNumber: 2` packaging. When the installed workflow can safely process independent animation rows concurrently, let it do so with the same approved identity lock; never skip a row or QA gate to save time.
 
 Keep the user's visible progress list aligned to:
 

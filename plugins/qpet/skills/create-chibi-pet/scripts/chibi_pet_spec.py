@@ -84,6 +84,23 @@ _ACCESSORY_RULES = (
     ("scarf", (r"(?<![a-z])(?:scarf|scarves)(?![a-z])", r"围巾")),
 )
 
+
+def _compile_rules(
+    rules: Sequence[tuple[str, Sequence[str]]],
+) -> tuple[tuple[str, re.Pattern[str]], ...]:
+    """Compile one expression per cue to keep detection fast and deterministic."""
+    return tuple(
+        (
+            cue,
+            re.compile("|".join(f"(?:{pattern})" for pattern in patterns), re.IGNORECASE),
+        )
+        for cue, patterns in rules
+    )
+
+
+_COMPILED_COLOR_RULES = _compile_rules(_COLOR_RULES)
+_COMPILED_ACCESSORY_RULES = _compile_rules(_ACCESSORY_RULES)
+
 _ACCESSORY_NAMES: dict[str, dict[str, str]] = {
     "satchel": {"zh": "挎包", "en": "satchel"},
     "backpack": {"zh": "背包", "en": "backpack"},
@@ -317,8 +334,7 @@ def normalize_keywords(values: Iterable[str]) -> list[str]:
     seen: set[str] = set()
     for value in values:
         for part in _SPLIT_KEYWORDS.split(value):
-            part = " ".join(part.strip().split())
-            if not part:
+            if not part.strip():
                 continue
             part = _clean_text(part, "keyword", 120)
             folded = part.casefold()
@@ -337,10 +353,9 @@ def normalize_likeness_cues(values: Iterable[str]) -> list[str]:
     normalized: list[str] = []
     seen: set[str] = set()
     for value in values:
-        cleaned = " ".join(value.strip().split())
-        if not cleaned:
+        if not value.strip():
             continue
-        cleaned = _clean_text(cleaned, "likeness cue", MAX_LIKENESS_CUE_LENGTH)
+        cleaned = _clean_text(value, "likeness cue", MAX_LIKENESS_CUE_LENGTH)
         folded = cleaned.casefold()
         if folded not in seen:
             normalized.append(cleaned)
@@ -350,31 +365,32 @@ def normalize_likeness_cues(values: Iterable[str]) -> list[str]:
     return normalized
 
 
-def _extract_cues(values: Sequence[str], rules: Sequence[tuple[str, Sequence[str]]]) -> list[str]:
+def _extract_cues(
+    values: Sequence[str], rules: Sequence[tuple[str, re.Pattern[str]]]
+) -> list[str]:
     found: list[str] = []
     found_set: set[str] = set()
     for value in values:
         occupied: list[tuple[int, int]] = []
         folded = value.casefold()
-        for cue, patterns in rules:
-            for pattern in patterns:
-                for match in re.finditer(pattern, folded, flags=re.IGNORECASE):
-                    span = match.span()
-                    if any(span[0] < end and start < span[1] for start, end in occupied):
-                        continue
-                    occupied.append(span)
-                    if cue not in found_set:
-                        found.append(cue)
-                        found_set.add(cue)
+        for cue, pattern in rules:
+            for match in pattern.finditer(folded):
+                span = match.span()
+                if any(span[0] < end and start < span[1] for start, end in occupied):
+                    continue
+                occupied.append(span)
+                if cue not in found_set:
+                    found.append(cue)
+                    found_set.add(cue)
     return found
 
 
 def detect_color_cues(keywords: Sequence[str]) -> list[str]:
-    return _extract_cues(keywords, _COLOR_RULES)
+    return _extract_cues(keywords, _COMPILED_COLOR_RULES)
 
 
 def detect_required_accessories(keywords: Sequence[str]) -> list[str]:
-    return _extract_cues(keywords, _ACCESSORY_RULES)
+    return _extract_cues(keywords, _COMPILED_ACCESSORY_RULES)
 
 
 def _resolve_language(requested: str, values: Sequence[str]) -> str:

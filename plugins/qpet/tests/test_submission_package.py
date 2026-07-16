@@ -14,7 +14,7 @@ class SubmissionPackageTests(unittest.TestCase):
         self.assertEqual(manifest["name"], "qpet")
         self.assertRegex(
             manifest["version"],
-            r"^1\.0\.1(?:\+codex\.[0-9A-Za-z.-]+)?$",
+            r"^1\.0\.2(?:\+codex\.[0-9A-Za-z.-]+)?$",
         )
         interface = manifest["interface"]
         for field in ("composerIcon", "logo", "logoDark"):

@@ -1,7 +1,7 @@
-# Release Notes — 1.0.1
+# Release Notes — 1.0.2
 
-- Qpet now uses 奶油卷, the publisher's cream-colored curly cat pet, as its icon.
-- The GitHub page and plugin descriptions are shorter and easier to understand.
-- A new share-with-friends guide explains installation in one simple message.
-- Keyword and selfie examples are now included in the package.
-- Qpet's main benefits are clearer: three looks to choose from, a chibi-selfie option, consistent character design, and an animated desktop pet.
+- GitHub release checks now exclude the temporary Python cache created during testing, just like the release archives do.
+- The introduction now shows one direct message users can send to Codex to install Qpet for themselves.
+- Keyword recognition is faster while producing the same concepts, identity locks, and prompts.
+- Qpet still completes all three concept choices, every animation row, direction QA, and package validation.
+- The 奶油卷 icon and plain-language keyword and selfie examples remain unchanged.

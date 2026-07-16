@@ -26,6 +26,7 @@
 - [x] Review the repository license and publisher name.
 - [x] Push the `main` branch.
 - [x] Test installation from a clean Codex profile using the GitHub repository.
-- [x] Create tag `v1.0.1`.
-- [x] Attach the two ZIP files and `SHA256SUMS.txt` to the GitHub Release.
+- [ ] Confirm the `main` branch GitHub check passes.
+- [ ] Create tag `v1.0.2`.
+- [ ] Attach the two ZIP files and `SHA256SUMS.txt` to the GitHub Release.
 - [ ] Keep the OpenAI universal-directory submission separate from this community release.
