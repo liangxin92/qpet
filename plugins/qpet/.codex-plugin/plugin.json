@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Create your own 3D chibi desktop pet from a few words or a selfie.",
   "author": {
-    "name": "Petai Studio"
+    "name": "QpetAI"
   },
   "license": "MIT",
   "keywords": [
@@ -18,7 +18,7 @@
     "displayName": "Qpet",
     "shortDescription": "Make a 3D chibi pet from words or a selfie.",
     "longDescription": "Describe a pet or add a selfie. Qpet shows three different looks, remembers the one you choose, and turns it into an animated desktop pet. No design experience is needed.",
-    "developerName": "Petai Studio",
+    "developerName": "QpetAI",
     "category": "Productivity",
     "capabilities": [
       "Create from a few words",

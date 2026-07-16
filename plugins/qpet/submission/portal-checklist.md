@@ -16,7 +16,7 @@
 
 These values cannot be invented by the code package:
 
-1. Replace `Petai Studio` with the verified individual/developer display name if different.
+1. Confirm `QpetAI` matches the public developer or organization display name.
 2. Complete OpenAI individual or business identity verification.
 3. Confirm Apps Management Write permission for the submitting organization.
 4. Host a public website, support page, privacy policy, and terms page over HTTPS.
