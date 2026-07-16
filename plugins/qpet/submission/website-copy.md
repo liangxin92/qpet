@@ -27,7 +27,7 @@ Secondary action: **See how it works**
 
 ## Honest limits
 
-Qpet creates a 3D-looking animated desktop pet, not a freely rotatable real-time 3D model. Live ChatGPT usage as an HP bar is not available on the current desktop pet surface.
+Qpet creates a 3D-looking animated desktop pet, not a freely rotatable real-time 3D model.
 
 ## Footer links
 

@@ -17,18 +17,20 @@ Qpet 不要求你懂设计。它会先给你三种明显不同的造型，你选
 - **不满意可以局部修改**：不用每次全部推倒重来。
 - **照片由你主动选择**：Qpet 不会偷偷打开相机，也不会把原始自拍放进宠物文件。
 
-## 自己安装：直接告诉 Codex
+## 安装方式
+
+### 1. 在 Codex 对话中安装
 
 打开 ChatGPT 桌面版，进入一个新的 Codex 对话，然后发送：
 
-> 请帮我安装 Qpet：https://github.com/liangxin92/qpet 。固定使用 v1.0.2。安装完成后提醒我新建一个 Codex 对话使用。
+> 安装 Qpet：https://github.com/liangxin92/qpet 。固定使用 v1.0.1。安装完成后提醒我新建一个 Codex 对话使用。
 
 安装时如果出现确认窗口，点击允许。安装完成后，新建一个 Codex 对话。
 
-## 手动安装
+### 2. 手动安装
 
 ```bash
-codex plugin marketplace add liangxin92/qpet --ref v1.0.2
+codex plugin marketplace add liangxin92/qpet --ref v1.0.1
 codex plugin add qpet@qpet
 ```
 
@@ -56,14 +58,14 @@ codex plugin add qpet@qpet
 
 ## 目前的边界
 
-Qpet 制作的是看起来像 3D 的动画桌面宠物，不是可以自由旋转的实时 3D 模型。当前桌面宠物也还不能把 ChatGPT 剩余用量显示成 HP 血条。
+Qpet 制作的是看起来像 3D 的动画桌面宠物，不是可以自由旋转的实时 3D 模型。
 
 ## English quick start
 
 Qpet turns a few words or an attached selfie into three different 3D chibi looks. Pick your favorite, and Qpet turns it into an animated desktop pet.
 
 ```bash
-codex plugin marketplace add liangxin92/qpet --ref v1.0.2
+codex plugin marketplace add liangxin92/qpet --ref v1.0.1
 codex plugin add qpet@qpet
 ```
 

@@ -37,4 +37,4 @@ For selfies, you choose the exact photo and the visible details you want to keep
 
 ## Current limits
 
-Qpet creates a 3D-looking animated desktop pet, not a freely rotatable real-time 3D model. The current desktop pet area also does not support a live ChatGPT usage HP bar.
+Qpet creates a 3D-looking animated desktop pet, not a freely rotatable real-time 3D model.

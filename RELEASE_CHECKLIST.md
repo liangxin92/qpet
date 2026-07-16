@@ -15,7 +15,7 @@
 - [x] Logo, dark logo, composer icon, and Skill icons use the approved 奶油卷 cat avatar.
 - [x] Selfie consent and source-photo handling remain explicit.
 - [x] Qpet does not claim to open the camera silently.
-- [x] Qpet does not claim to add new native mouse interactions or a native usage HP overlay.
+- [x] Qpet does not claim unsupported native host capabilities.
 - [x] Exactly five positive and three negative review cases remain present.
 - [x] No credentials, tokens, private keys, personal photos, or local test output are included.
 
@@ -26,7 +26,8 @@
 - [x] Review the repository license and publisher name.
 - [x] Push the `main` branch.
 - [x] Test installation from a clean Codex profile using the GitHub repository.
-- [x] Confirm the `main` branch GitHub check passes.
-- [x] Create tag `v1.0.2`.
-- [x] Attach the two ZIP files and `SHA256SUMS.txt` to the GitHub Release.
+- [ ] Confirm the replacement `main` branch GitHub check passes.
+- [ ] Replace tag `v1.0.1` with the corrected release commit.
+- [ ] Attach the two replacement ZIP files and `SHA256SUMS.txt` to the GitHub Release.
+- [ ] Remove the superseded release and tag.
 - [ ] Keep the OpenAI universal-directory submission separate from this community release.

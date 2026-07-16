@@ -16,7 +16,7 @@ The plugin does not claim that 3D-toy styling alone is unique. Its reviewable va
 4. targeted repair of failed coherent animation states
 5. strict package validation, conflict detection, and safe-install rules
 
-The package contains a future-design note for an account-usage HP companion, but the market skill never queries rate limits, starts a monitor, injects a HUD, or advertises that unsupported capability.
+The market skill does not query account usage, start a background monitor, or advertise unsupported host capabilities.
 
 ## Camera boundary
 
