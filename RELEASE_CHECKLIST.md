@@ -26,8 +26,7 @@
 - [x] Review the repository license and publisher name.
 - [x] Push the `main` branch.
 - [x] Test installation from a clean Codex profile using the GitHub repository.
-- [ ] Confirm the replacement `main` branch GitHub check passes.
-- [ ] Replace tag `v1.0.1` with the corrected release commit.
-- [ ] Attach the two replacement ZIP files and `SHA256SUMS.txt` to the GitHub Release.
-- [ ] Remove the superseded release and tag.
+- [x] Confirm the replacement `main` branch GitHub check passes.
+- [x] Replace tag `v1.0.1` with the corrected release commit.
+- [x] Attach the two replacement ZIP files and `SHA256SUMS.txt` to the GitHub Release.
 - [ ] Keep the OpenAI universal-directory submission separate from this community release.
